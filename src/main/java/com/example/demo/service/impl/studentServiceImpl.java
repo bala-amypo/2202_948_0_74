@@ -7,3 +7,10 @@ import java.util.*;
 import org.springframework.beans.factory.annotations.Autowired;
 
 @service
+public class studentServiceImpl implements studentService{
+
+    @Autowired
+    studentRepo rep;
+
+    public List
+}
