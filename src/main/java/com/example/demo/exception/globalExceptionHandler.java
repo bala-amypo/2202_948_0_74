@@ -10,6 +10,9 @@ public class globalExceptionHandler{
     public ResponseEntity<?>handleFieldError(MethodArguementNotValidException ex){
         Map<String,String>error=new HashMap();
 
-        ex.getBindingData().getFieldsError().forEach(err -> error.put(ex.getFields(),ex.get))
+        ex.getBindingResult().getFieldsError().forEach(err -> error.put(ex.getFields(),ex.getDefaultMessage()));
+
+        return new ResponseEntity<>(error,Httpstatus.BAD-REQUEST);
+
     }
 }
