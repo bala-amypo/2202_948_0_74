@@ -1,3 +1,4 @@
+package com.example.demo.service.impl;
 
 import com.example.demo.service.*;
 import com.example.demo.repository.*;
@@ -12,5 +13,5 @@ public class studentServiceImpl implements studentService{
     @Autowired
     studentRepo rep;
 
-    public List
+    public List<studentEntity>g
 }

@@ -11,10 +11,15 @@ public class studentController{
     
     @Autowired
     @studentService service;
-    
+
     @GetMapping("/getAllstudent")
     public List<studentEntity>getAll(){
+        return service.getAll();
 
+    }
+    @postMapping("/add")
+    public studentEntity addstudent(@Valid @RequestBody studentEntity student){
+        return service.addstudent(student);
     }
 
 }
