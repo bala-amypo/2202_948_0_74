@@ -5,5 +5,5 @@ import org.springframework.web.bind.annotation.*;
 @RestControllerAdvice
 public class globalExceptionHandler{
 
-    @Exc
+    @ExceptionHandler(MethodArguementNotValidException.class)
 }
