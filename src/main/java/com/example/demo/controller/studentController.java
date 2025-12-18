@@ -9,18 +9,18 @@ import com.example.demo.entity.*;
 import com.example.demo.service.*;
 
 @RestController
-public class studentController{
+public class StudentController{
     
     @Autowired
-    @studentService service;
+    private StudentService service;
 
     @GetMapping("/getAllstudent")
     public List<studentEntity>getAll(){
         return service.getAll();
 
     }
-    @postMapping("/add")
-    public studentEntity addstudent(@Valid @RequestBody studentEntity student){
+    @PostMapping("/add")
+    public StudentEntity addStudent(@Valid @RequestBody studentEntity student){
         return service.addstudent(student);
     }
 
