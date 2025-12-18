@@ -1,5 +1,8 @@
 package com.example.demo.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.*;
+
 import com.example.demo.service.*;
 import com.example.demo.repository.*;
 import com.example.demo.entity.*;
@@ -17,6 +20,6 @@ public class studentServiceImpl implements studentService{
         return repo.findAll();
     }
     public studentEntity addstudent(studentEntity student){
-        return repo.save.addstudent(student);
+        return repo.save(student);
     }
 }
