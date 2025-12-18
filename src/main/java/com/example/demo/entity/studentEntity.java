@@ -32,7 +32,7 @@ public class studentEntity{
         return email;
     }
     public void setEmail(string email){
-        return email;
+        this.email=email;
     }
     public studentEntity(){
 
