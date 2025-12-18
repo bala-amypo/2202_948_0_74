@@ -22,4 +22,7 @@ public class studentServiceImpl implements studentService{
     public studentEntity addstudent(studentEntity student){
         return repo.save(student);
     }
+    public studentEntity getbyId(Long id){
+          return repo.findById(id).orElseThrow
+
 }
