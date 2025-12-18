@@ -1,4 +1,4 @@
-package.com.example.demo.contrroller;
+package.com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.valid;
@@ -12,7 +12,7 @@ import com.example.demo.service.*;
 public class studentController{
     
     @Autowired
-    @studentService service;
+    studentService service;
 
     @GetMapping("/getAllstudent")
     public List<studentEntity>getAll(){
