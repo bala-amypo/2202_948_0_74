@@ -10,7 +10,7 @@ import java.util.*;
 
 import org.springframework.beans.factory.annotations.Autowired;
 
-@service
+@Service
 public class studentServiceImpl implements studentService{
 
     @Autowired

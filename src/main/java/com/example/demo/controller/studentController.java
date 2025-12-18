@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+
 import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
 
@@ -12,7 +13,7 @@ import com.example.demo.service.*;
 public class StudentController{
     
     @Autowired
-    private StudentService service;
+     StudentService service;
 
     @GetMapping("/getAllstudent")
     public List<studentEntity>getAll(){
