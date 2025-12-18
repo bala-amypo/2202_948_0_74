@@ -5,5 +5,8 @@ import java.util.*;
 
 interface studentService{
 
-    List<studentEntity> ge
+    List<studentEntity> getAll();
+
+    studentEntity addstudent(studentEntity student);
+    
 }
